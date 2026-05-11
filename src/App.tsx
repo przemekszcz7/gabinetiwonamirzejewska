@@ -440,14 +440,14 @@ const Contact = () => {
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  className="flex items-center gap-6 group"
+                  className="flex items-center gap-4 sm:gap-6 group"
                 >
-                  <div className="w-16 h-16 rounded-full border border-brand-cream/20 flex items-center justify-center text-brand-gold group-hover:bg-brand-gold group-hover:text-white transition-all duration-300">
-                    <Phone size={24} />
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full border border-brand-cream/20 flex items-center justify-center text-brand-gold group-hover:bg-brand-gold group-hover:text-white transition-all duration-300 shrink-0">
+                    <Phone size={20} className="sm:w-6 sm:h-6" />
                   </div>
                   <div>
                     <div className="text-[10px] uppercase tracking-widest text-brand-cream/50 mb-1">Zadzwoń do mnie</div>
-                    <div className="text-2xl font-serif">{CONTACT.phone}</div>
+                    <div className="text-xl sm:text-2xl font-serif">{CONTACT.phone}</div>
                   </div>
                 </motion.a>
 
@@ -457,14 +457,14 @@ const Contact = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.1 }}
-                  className="flex items-center gap-6 group"
+                  className="flex items-center gap-4 sm:gap-6 group"
                 >
-                  <div className="w-16 h-16 rounded-full border border-brand-cream/20 flex items-center justify-center text-brand-gold group-hover:bg-brand-gold group-hover:text-white transition-all duration-300">
-                    <Mail size={24} />
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full border border-brand-cream/20 flex items-center justify-center text-brand-gold group-hover:bg-brand-gold group-hover:text-white transition-all duration-300 shrink-0">
+                    <Mail size={20} className="sm:w-6 sm:h-6" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <div className="text-[10px] uppercase tracking-widest text-brand-cream/50 mb-1">Napisz e-mail</div>
-                    <div className="text-2xl font-serif">{CONTACT.email}</div>
+                    <div className="text-lg sm:text-2xl font-serif break-all sm:break-normal">{CONTACT.email}</div>
                   </div>
                 </motion.a>
 
@@ -473,14 +473,14 @@ const Contact = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.2 }}
-                  className="flex items-center gap-6 group"
+                  className="flex items-center gap-4 sm:gap-6 group"
                 >
-                  <div className="w-16 h-16 rounded-full border border-brand-cream/20 flex items-center justify-center text-brand-gold">
-                    <MapPin size={24} />
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full border border-brand-cream/20 flex items-center justify-center text-brand-gold shrink-0">
+                    <MapPin size={20} className="sm:w-6 sm:h-6" />
                   </div>
                   <div>
                     <div className="text-[10px] uppercase tracking-widest text-brand-cream/50 mb-1">Lokalizacja</div>
-                    <div className="text-2xl font-serif">{CONTACT.city}</div>
+                    <div className="text-xl sm:text-2xl font-serif">{CONTACT.city}</div>
                   </div>
                 </motion.div>
               </div>
